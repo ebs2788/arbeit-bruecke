@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arbeit-Brücke</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+    header { background: #004aad; color: white; padding: 2rem 1rem; text-align: center; }
+    nav { display: flex; justify-content: center; gap: 1rem; background: #00337f; padding: 0.7rem; position: sticky; top: 0; }
+    nav a { color: white; text-decoration: none; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    section { padding: 2rem; max-width: 900px; margin: auto; }
+    h1, h2 { color: #004aad; }
+    .cta { display: inline-block; margin-top: 1rem; padding: 0.7rem 1.5rem; background: #004aad; color: white; text-decoration: none; border-radius: 5px; }
+    .cta:hover { background: #002f6c; }
+    footer { background: #f1f1f1; text-align: center; padding: 1rem; margin-top: 2rem; font-size: 0.9rem; }
+    input, textarea { width: 100%; padding: 0.5rem; margin-top: 0.3rem; margin-bottom: 1rem; border-radius: 4px; border: 1px solid #ccc; }
+    button { padding:0.7rem 1.5rem; background:#004aad; color:white; border:none; border-radius:5px; cursor:pointer; }
+    button:hover { background: #002f6c; }
+    ul { list-style-type: disc; padding-left: 1.5rem; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Arbeit-Brücke</h1>
+    <p>Wir bringen Geflüchtete und Unternehmen zusammen.</p>
+  </header>
+
+  <nav>
+    <a href="#gefluechtete">Für Geflüchtete</a>
+    <a href="#unternehmen">Für Unternehmen</a>
+    <a href="#about">Über uns</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+
+  <section id="start">
+    <h2>Willkommen</h2>
+    <p>Arbeit-Brücke hilft Geflüchteten, eine Arbeit in Deutschland zu finden – und unterstützt Unternehmen dabei, motivierte Mitarbeiter zu gewinnen. Gemeinsam schaffen wir Chancen.</p>
+    <a href="#gefluechtete" class="cta">Jetzt Arbeit suchen</a>
+    <a href="#unternehmen" class="cta">Mitarbeiter finden</a>
+  </section>
+
+  <section id="gefluechtete">
+    <h2>Für Geflüchtete</h2>
+    <p>Wir helfen dir bei:</p>
+    <ul>
+      <li>Arbeitsgenehmigungs-Anträgen</li>
+      <li>Lebenslauf & Bewerbung</li>
+      <li>Kontakt zu passenden Unternehmen</li>
+    </ul>
+    <a href="#kontakt" class="cta">Bewerbungsformular ausfüllen</a>
+  </section>
+
+  <section id="unternehmen">
+    <h2>Für Unternehmen</h2>
+    <p>Profitieren Sie von motivierten Arbeitskräften und lassen Sie uns den Papierkram übernehmen:</p>
+    <ul>
+      <li>Unterstützung bei Anträgen und Behörden</li>
+      <li>Auswahl passender Bewerber</li>
+      <li>Integration im Betrieb</li>
+    </ul>
+    <a href="#kontakt" class="cta">Jetzt Kontakt aufnehmen</a>
+  </section>
+
+  <section id="about">
+    <h2>Über uns</h2>
+    <p>Wir sind ein Familienunternehmen: Vater & Sohn mit Herz für Integration und starken Kontakten zur Wirtschaft. Unser Ziel ist es, Brücken zu bauen – zwischen Menschen, Kulturen und Unternehmen.</p>
+  </section>
+
+  <section id="kontakt">
+    <h2>Kontakt</h2>
+    <p>Schreiben Sie uns gerne eine Nachricht:</p>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">E-Mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Nachricht:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Absenden</button>
+    </form>
+    <p style="font-size:0.8rem; color:#666; margin-top:0.5rem;">Hinweis: Das Formular wird über Formspree versendet. Einfach Form-ID ersetzen.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Arbeit-Brücke | Gemeinsam Chancen schaffen</p>
+  </footer>
+
+</body>
+</html>
